@@ -1,10 +1,7 @@
 <?php
 require_once "Views/header.php";
-require_once "Class/BDD.php";
-require_once "Models/MarqueManager.php";
-require_once "Controller/MarqueController.php";
-require_once "Models/ModeleManager.php";
-require_once "Controller/ModeleController.php";
+require_once "Class/Autoload.php";
+Autoload::load();
 
 if(isset($_GET['success']) && !empty($_GET['success']) && $_GET['success'] == "true"){
     BDD::requireErrorView(200);
