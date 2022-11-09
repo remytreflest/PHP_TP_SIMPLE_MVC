@@ -4,10 +4,10 @@ require_once "Class/Autoload.php";
 Autoload::load();
 
 if(isset($_GET['success']) && !empty($_GET['success']) && $_GET['success'] == "true"){
-    BDD::requireErrorView(200);
+    BDD::requireErrorView(BDD::STATUSCODE_200);
 }
 if(isset($_GET['success']) && !empty($_GET['success']) && $_GET['success'] == "false"){
-    BDD::requireErrorView(400);
+    BDD::requireErrorView(BDD::STATUSCODE_400);
 }
 
 if(isset($_GET['page'])){
