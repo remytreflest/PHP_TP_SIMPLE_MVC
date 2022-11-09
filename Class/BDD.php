@@ -17,8 +17,8 @@ class BDD {
     const UNPROCESSABLE_ENTITY = "UNPROCESSABLE_ENTITY";
     const BAD_PARAMS = "BAD_PARAMS";
     // Variables permettant de personnaliser le mode de débug et même de simuler des erreurs de retour type 400 ou 500 pour ainsi tester la réaction de notre code à ces cas là.
-    const DEBUG = true;
-    const EXIT_WHEN_ERROR = true;
+    const DEBUG = false;
+    const EXIT_WHEN_ERROR = false;
     const SIMULATE_ERROR_500 = false;
     const SIMULATE_ERROR_400 = false;
 
